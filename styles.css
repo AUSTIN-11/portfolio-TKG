@@ -29,6 +29,8 @@ body {
 }
 
 .menu-items {
+  border: #d43725;
+  border-color: #d43725;
     list-style: none;
     display: flex;
     justify-content: center; /* Center the menu items */
