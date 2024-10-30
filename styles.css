@@ -17,6 +17,7 @@ body {
 }
 
 .navbar {
+  color:#6e0606;
     display: flex;
     flex-direction: column; /* Change to column to stack items */
     align-items: center; /* Center align items horizontally */
@@ -144,6 +145,7 @@ background: linear-gradient(135deg, #6e0606, #3700b3);
   
 .work-image {
   width: 100%;
+
   border-radius: 10px;
 }
 
