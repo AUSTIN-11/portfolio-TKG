@@ -67,9 +67,16 @@ a {
 }
 
 .angle-down {
-  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
   margin-top: 20px;
   color: #ffcc00;
+}
+
+.angle-down i {
+  margin-top: -11px;
+  font-size: 2em;
 }
 
 /* About Section */
@@ -90,6 +97,10 @@ a {
 .skills-list {
   list-style: none;
   padding: 0;
+}
+
+iframe {
+  border: none;
 }
 
 .skills-list li {
@@ -121,7 +132,7 @@ a {
   border: 1px solid #ddd;
   border-radius: 10px;
   margin: 20px;
-  padding: px;
+  padding: 10px;
   width: 300px;
   transition:
     transform 0.3s,
@@ -152,7 +163,7 @@ a {
 
 .work-image {
   width: 100%;
-
+  height: auto;
   border-radius: 10px;
 }
 
