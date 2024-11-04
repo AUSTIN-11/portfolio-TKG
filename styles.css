@@ -343,7 +343,7 @@ footer {
     top: 0;
     left: -100%;
     height: 100vh;
-    width: 30%;
+    width: 100%;
     max-width: 400px;
     background: linear-gradient(135deg, #845ec2, #3700b3);
     display: block;
