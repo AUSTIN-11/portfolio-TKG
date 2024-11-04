@@ -7,42 +7,36 @@
     <title>Tevin Kote</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Favicon -->
-    <script
-      src="https://kit.fontawesome.com/66aa7c98b3.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
-    <!-- Header Section -->
     <header class="header">
-      <nav class="navbar">
-        <div class="navbar-container container">
-          <h1 class="navbar-brand">Tevin Kote</h1>
-          <ul class="menu-items">
-            <li><a href="#about">About</a></li>
-            <li><a href="#my-works">My Work</a></li>
-            <li><a href="#podcast">Podcast</a></li>
-            <li><a href="#contact-me">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="home-content" id="home-page">
-        <h1>Unleash the Power of Compelling Communication</h1>
-        <p>Strategic Communication | Media Relations | Brand Storytelling</p>
-        <a href="#about" class="angle-down" rel="noopener"
-          >See more <i class="fas fa-angle-down"></i
-        ></a>
+      <div class="logo">
+        <a href="#">Tevin Kote</a>
       </div>
+
+      <nav class="navbar">
+        <ul class="menu-items">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#my-works">My Work</a></li>
+          <li><a href="#podcast">Podcast</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <section class="home" id="home">
+        <div class="container home-content" id="home-page">
+          <h1>Unleash the Power of Compelling Communication</h1>
+          <p>Strategic Communication | Media Relations | Brand Storytelling</p>
+          <a href="#about" aria-label="scroll" class="angle-down" rel="noopener"
+            ><i class="fas fa-angle-down"></i
+          ></a>
+        </div>
+      </section>
+
       <!-- About Section -->
       <section class="about-me" id="about">
         <div class="container">
@@ -217,6 +211,18 @@
       <p>&copy; 2024 Tevin Kote. All rights reserved.</p>
     </footer>
 
+    <!-- Favicon -->
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external js -->
     <script src="script.js"></script>
   </body>
 </html>

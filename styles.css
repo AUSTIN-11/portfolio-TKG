@@ -2,48 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+html {
+  line-height: 1.6;
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
   color: #845ec2;
   background-color: #f9f9f9;
+  font-size: 11px;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  margin: 15px;
+}
+
 /* Header Styles */
 .header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 60px;
   background: linear-gradient(135deg, #845ec2, #3700b3);
   color: rgb(151, 151, 151);
-  padding: 0;
-  text-align: center;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column; /* Change to column to stack items */
-  align-items: center; /* Center align items horizontally */
-  padding: 0;
-}
-
-.navbar-brand {
-  font-size: 2em;
+.header .logo a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .menu-items {
   list-style: none;
   display: flex;
-  justify-content: center; /* Center the menu items */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.menu-items li {
-  margin: 0 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 15px;
 }
 
 .menu-items a {
@@ -56,15 +60,36 @@ a {
   color: #ffcc00; /* Hover color */
 }
 
+/* home section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+}
+
+.home h1 {
+  font-size: 2.1rem;
+}
+
+.home p {
+  font-size: 1.5rem;
+}
+
+.home a {
+  font-size: 1.2rem;
+}
+
 /* Home Content */
-.home-content h1 {
+/* .home-content h1 {
   font-size: 2.5em;
   margin: 0.5em 0;
 }
 
 .home-content p {
   font-size: 1.2em;
-}
+} */
 
 .angle-down {
   display: flex;
