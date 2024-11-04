@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -19,14 +19,26 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+iframe {
+  border: none;
+}
+
 .container {
-  margin: 15px;
+  /* margin: 15px; */
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 1.9rem;
 }
 
 /* navbar */
 .navbar {
   position: fixed;
-  z-index: 5;
   width: 100%;
   padding: 10px;
   background: linear-gradient(135deg, #845ec2, #3700b3);
@@ -34,13 +46,11 @@ a {
 }
 
 .navbar.sticky {
-  padding: 10px 0;
   background: linear-gradient(135deg, #845ec2, #3700b3);
 }
 
 .content {
   width: 100%;
-  margin: auto;
   padding: 0px 30px;
 }
 
@@ -88,7 +98,7 @@ a {
 .icon.cancel-btn {
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 0;
 }
 
 /* home section */
@@ -112,16 +122,6 @@ a {
   font-size: 1.2rem;
 }
 
-/* Home Content */
-/* .home-content h1 {
-  font-size: 2.5em;
-  margin: 0.5em 0;
-}
-
-.home-content p {
-  font-size: 1.2em;
-} */
-
 .angle-down {
   display: flex;
   flex-direction: column;
@@ -137,26 +137,31 @@ a {
 
 /* About Section */
 .about-me {
-  background: linear-gradient(135deg, #ff007f, #d43725);
+  /* background: linear-gradient(135deg, #ff007f, #d43725); */
   padding: 40px 20px;
   text-align: center;
 }
 
-.about-heading {
-  font-size: 2em;
+.about-me p {
+  font-size: 1.2rem;
 }
 
-.skills-heading {
-  margin-top: 20px;
+/* services */
+.services {
+  padding: 20px;
+  margin: 10px;
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
+.services h2 {
+  text-align: center;
 }
 
-iframe {
-  border: none;
+.services ul {
+  font-size: 1.1rem;
+}
+
+.services ul:hover {
+  cursor: pointer;
 }
 
 .skills-list li {
@@ -344,10 +349,10 @@ footer {
     left: -100%;
     height: 100vh;
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
     background: linear-gradient(135deg, #845ec2, #3700b3);
     display: block;
-    padding: 40px 0;
+    padding: 30px 0;
     text-align: center;
     transition: all 0.3s ease;
   }
@@ -355,9 +360,9 @@ footer {
     left: 0%;
   }
   .navbar .menu-list li {
-    margin-top: 45px;
+    margin-top: 50px;
   }
   .navbar .menu-list li a {
-    font-size: 23px;
+    font-size: 1.3rem;
   }
 }
