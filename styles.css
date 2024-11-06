@@ -236,10 +236,12 @@ h2 {
   text-align: center;
 }
 .podcast-heading {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 40px;
 }
-
+.podcast p {
+  font-size: 20px;
+}
 .podcast-link {
   display: inline-block;
   margin: 10px 0;
