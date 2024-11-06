@@ -1,20 +1,21 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $email = htmlspecialchars(trim($_POST["email"]));
+    $message = htmlspecialchars(trim($_POST["message"]));
 
-    $to = "kotetevin47@gmail.com"; // Replace with your email address
-    $subject = "New Message from Portfolio Site";
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
-    $headers = "From: $email";
+    $to = "kotetevin47@gmail.com";
+    $subject = "New Message from Portfolio Contact Form";
+    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+
+    // Send the email
     if (mail($to, $subject, $body, $headers)) {
         echo "Message sent successfully!";
     } else {
-        echo "Message sending failed.";
+        echo "Failed to send message. Please try again later.";
     }
-} else {
-    echo "Invalid request method.";
 }
 ?>
