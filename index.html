@@ -1,76 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tevin Kote</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tevin Kote</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="content">
+        <div class="logo">
+          <a href="#">Tevin Kote</a>
+        </div>
 
-<body>
-  <!-- Header Section -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="navbar-container container">
-        <h1 class="navbar-brand">Tevin Kote</h1>
-        <ul class="menu-items">
+        <ul class="menu-list">
+          <li class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </li>
+
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#my-works">My Work</a></li>
           <li><a href="#podcast">Podcast</a></li>
           <li><a href="#contact-me">Contact</a></li>
         </ul>
+
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </nav>
-    <div class="home-content" id="home-page">
-      <h1>Unleash the Power of Compelling Communication</h1>
-      <p>Strategic Communication | Media Relations | Brand Storytelling</p>
-      <a href="#about" class="angle-down"><i class="fas fa-angle-down"></i></a>
-    </div>
-  </header>
 
-  <main>
-    <!-- About Section -->
-    <section class="about-me" id="about">
-      <div class="container">
-        <h1 class="about-heading">About Me</h1>
-        <p>
-          In today's fast-paced world, effective communication is the cornerstone of success. Tevin Kote is a
-          communications strategist whose work spans social media management, graphic design, photography, and video editing, ensuring that every message resonates deeply.
-        </p>
-        <h2 class="skills-heading">What I Do</h2>
-        <ul class="skills-list">
-          <li>Internal Communications Strategies</li>
-          <li>Branding Programs & Media Relations</li>
-          <li>Event Management</li>
-          <li>Podcast Storytelling</li>
-        </ul>
-      </div>
-    </section>
+    <main>
+      <section class="home" id="home">
+        <div class="container" id="home-page">
+          <h1>Unleash the Power of Compelling Communication</h1>
+          <p>Strategic Communication | Media Relations | Brand Storytelling</p>
+          <a href="#about" aria-label="scroll" class="angle-down" rel="noopener"
+            ><i class="fas fa-angle-down"></i
+          ></a>
+        </div>
+      </section>
 
-    <!-- Portfolio Section -->
-    <section id="my-works">
-      <h1 class="proj-heading">My Work</h1>
-      <div class="portfolio-content container">
-        <!-- Graphic Design Item -->
-<div class="work-item">
-  <img src="form.png" alt="Graphic Design project example" class="work-image">
-  <h2>Graphic Design</h2>
-  <p>A showcase of my graphic design projects.</p>
-  <a href="https://drive.google.com/drive/folders/1XLIiKjrewhlkF_-GJstzSGvTbpYSXLZS?usp=sharing" target="_blank" class="work-button button">View Portfolio</a>
-</div>
+      <!-- About Section -->
+      <section class="about-me" id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            In a fast-paced world, effective communication is key.
+            Tevin Kote specializes in elevating brands through a strategic blend of social media management,
+            graphic design, photography, and video editing.
+            With a talent for crafting compelling narratives and visually impactful campaigns,
+            Tevin ensures that every message resonates with its target audience. From concept to execution,
+            he delivers cohesive communication strategies that engage and leave a lasting impression.
+
+          </p>
+        </div>
+      </section>
+
+      <!-- Service section -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2>What I Do</h2>
+          <ul class="skills-list">
+            <li>Internal Communications Strategies</li>
+            <li>Branding Programs & Media Relations</li>
+            <li>Event Management</li>
+            <li>Podcast Storytelling</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="my-works">
+        <h1 class="proj-heading">My Work</h1>
+        <div class="portfolio-content container">
+          <!-- Graphic Design Item -->
+          <div class="work-item">
+            <img
+              src="images/form.png"
+              alt="Graphic Design project example"
+              class="work-image"
+            />
+            <h2>Graphic Design</h2>
+            <p>A showcase of my graphic design projects.</p>
+            <a
+              href="https://drive.google.com/drive/folders/1XLIiKjrewhlkF_-GJstzSGvTbpYSXLZS?usp=sharing"
+              target="_blank"
+              class="work-button button"
+              rel="noopener"
+              >View Portfolio</a
+            >
+          </div>
 
           <!-- Photography Item -->
-           <div class="work-item">
+          <div class="work-item">
             <img src="IMG_7684.jpg" alt="Photography collection example" class="work-image">
             <h2>Photography</h2>
             <p>Explore my photography collection.</p>
-            <a href="https://drive.google.com/drive/folders/1Kl9BnWxwHKA7NboirYVkYpW3D7rUpgWO?usp=sharing" target="_blank" class="work-button button">View Portfolio</a>
+            <a
+              href="https://drive.google.com/drive/folders/1Kl9BnWxwHKA7NboirYVkYpW3D7rUpgWO?usp=sharing"
+              target="_blank"
+              class="work-button button"
+              rel="noopener"
+              >View Portfolio</a
+            >
           </div>
 
           <!-- Video Editing Item -->
@@ -81,67 +119,124 @@
             </video>
             <h2>Video Editing</h2>
             <p>Check out my video editing work.</p>
-            <a href="https://drive.google.com/drive/folders/1LZmoyxkRsEoc4Dy8otNaBT_xOK0gZsBK?usp=sharing" target="_blank" class="work-button button">View Portfolio</a>
+            <a
+              href="https://drive.google.com/drive/folders/1LZmoyxkRsEoc4Dy8otNaBT_xOK0gZsBK?usp=sharing"
+              target="_blank"
+              class="work-button button"
+              rel="noopener"
+              >View Portfolio</a
+            >
           </div>
+        </div>
+      </section>
+
+      <!-- Podcast Section -->
+      <section id="podcast">
+        <h2 class="podcast-heading">Podcast: Most Wanted Ke</h2>
+        <p style='font-size: 20px'>Engaging storytelling and communication insights on YouTube.</p>
+        <a
+          href="https://youtube.com/@mostwantedke"
+          target="_blank"
+          class="podcast-link"
+          rel="noopener"
+          >Listen on YouTube</a
+        >
+        <p style='font-size: 20px'>Listen to my podcast on:</p>
+        <div class="podcast-links">
+          <a
+            href="https://open.spotify.com/show/43pRCCi9JUg5ZwxkIdxXHN?si=a23c5e09b0cf466c&nd=1&dlsi=94e0f2d35c27446c"
+            target="_blank"
+            class="podcast-link"
+            rel="noopener"
+            >Spotify</a
+          >
+          <a
+            href="https://widget.spreaker.com/player?show_id=6086854&theme=dark&playlist=show&playlist-continuous=true&chapters-image=true"
+            target="_blank"
+            class="podcast-link"
+            rel="noopener"
+            >Spreaker</a
+          >
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section id="location">
+        <h2>Find Me</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.679612369814!2d36.81881!3d-1.28333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a12e9b7c4f%3A0x807d8c92c0a9b86!2sPR77%2BQF%20Nairobi!5e0!3m2!1sen!2ske!4v1698699570238!5m2!1sen!2ske"
+          width="100%"
+          height="300"
+          allowfullscreen=""
+          title="maps"
+        >
+        </iframe>
+      </section>
+
+      <!-- Contact Section -->
+      <div class="contact" id="contact-me">
+        <h2>Contact Me</h2>
+<!--         <p class="mail">Email: kotetevin47@gmail.com</p>
+        <p class="links">Connect on:</p> -->
+
+        <div class="social-links"> 
+        <a
+            href="https://www.instagram.com/kote_tev"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+          <a
+            href="https://x.com/kote_tevin47"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter"></i> X</a
+          >
+          <a
+            href="https://www.linkedin.com/in/tevin-kote-6bb62a239/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <a
+            href="https://www.facebook.com/tevin.max.3"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+        </div>
+
+        <!-- Contact Form -->
+        <form action="message.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-    </section>
+    </main>
 
-<!-- Podcast Section -->
-<section id="podcast">
-  <h2 class="podcast-heading">Podcast: Most Wanted Ke</h2>
-  <p>Engaging storytelling and communication insights on YouTube.</p>
-  <a href="https://youtube.com/@mostwantedke" target="_blank" class="podcast-link">Listen on YouTube</a>
-  <p>Listen to my podcast on:</p>
-  <div class="podcast-links">
-    <a href="https://open.spotify.com/show/43pRCCi9JUg5ZwxkIdxXHN?si=a23c5e09b0cf466c&nd=1&dlsi=94e0f2d35c27446c" target="_blank" class="podcast-link">Spotify</a>
-    <a href="https://widget.spreaker.com/player?show_id=6086854&theme=dark&playlist=show&playlist-continuous=true&chapters-image=true" target="_blank" class="podcast-link">Spreaker</a>
-  </div>
-</section>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Tevin Kote. All rights reserved.</p>
+    </footer>
 
+    <!-- Favicon -->
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-
-    <!-- Map Section -->
-    <section id="location">
-      <h2>Find Me</h2>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.679612369814!2d36.81881!3d-1.28333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a12e9b7c4f%3A0x807d8c92c0a9b86!2sPR77%2BQF%20Nairobi!5e0!3m2!1sen!2ske!4v1698699570238!5m2!1sen!2ske" 
-        width="100%" 
-        height="300" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
-    </section>
-
-    <!-- Contact Section -->
-    <div class="contact" id="contact-me">
-      <h2>Contact Me</h2>
-      <p class="mail">Email: kote_tevin@domain.com</p>
-      <p class="links">Connect on:</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/kote_tev" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="https://twitter.com/kote_tev" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> X</a>
-        <a href="https://www.linkedin.com/in/tevin-kote" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://facebook.com/KoteTev" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
-      </div>
-      
-      <!-- Contact Form -->
-      <form action="message.php" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Tevin Kote. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <!-- external js -->
+    <script src="script.js"></script>
+  </body>
 </html>
