@@ -7,7 +7,6 @@
 
 html {
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -175,41 +174,62 @@ h2 {
 
 /* Portfolio Section */
 #my-works {
-  background: linear-gradient(135deg, #6e0606, #3700b3);
-  padding: 40px 20px;
+  /* background: linear-gradient(135deg, #6e0606, #3700b3); */
   text-align: center;
-}
-
-.proj-heading {
-  font-size: 2em;
 }
 
 .portfolio-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .work-item {
-  background: white;
+  overflow: hidden;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   margin: 20px;
-  padding: 10px;
-  width: 300px;
+  width: 350px;
   transition:
     transform 0.3s,
     box-shadow 0.3s;
 }
 
+#my-works .work-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#my-works .work-item video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#my-works .work-item h3 {
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+
+#my-works .work-item p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
 .work-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .button {
   display: inline-block;
   padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: #fff; /* Text color */
   background-color: #007bff; /* Button background color */
